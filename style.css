@@ -1,42 +1,107 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f5f8ff;
-  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
   color: #333;
+  margin: 0;
+  padding: 0;
 }
+
 .container {
   max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 50px auto;
+  background: #ffffffee;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
+
 h1 {
-  color: #2a6fce;
   text-align: center;
+  color: #1e4ea1;
+  margin-bottom: 20px;
+  font-size: 28px;
 }
+
+p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
 label {
   display: block;
-  margin-top: 15px;
-  font-weight: bold;
-}
-input, select, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-button {
   margin-top: 20px;
-  background-color: #2a6fce;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 4px;
-  cursor: pointer;
+  font-weight: 600;
+  color: #333;
 }
+
+input[type="text"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #1e4ea1;
+  color: white;
+  font-size: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
 button:hover {
-  background-color: #1f57a3;
+  background-color: #163b7a;
+}
+
+.botao-voltar {
+  display: block;
+  text-align: center;
+  background-color: #00b894;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.botao-voltar:hover {
+  background-color: #009b7b;
+}
+
+/* Responsividade */
+@media (max-width: 650px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input, select, textarea {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .botao-voltar {
+    font-size: 16px;
+  }
 }
