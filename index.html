@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caixinha de Ideias - 8º AT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📬 Caixinha de Ideias – 8º AT</h1>
+    <p>Este é um espaço aberto para você deixar <strong>sugestões</strong>, <strong>ideias</strong> ou até <strongcríticas construtivas</strong> sobre a turma, projetos ou melhorias. Sua voz tem valor!</p>
+
+    <form action="https://formsubmit.co/miguelnegocios001@gmail.com" method="POST">
+      <label for="nome">Seu nome (opcional):</label>
+      <input type="text" id="nome" name="nome" placeholder="Por gentileza, coloque o seu nome" />
+
+      <label for="categoria">Categoria:</label>
+      <select id="categoria" name="categoria" required>
+        <option value="" disabled selected>Escolha uma opção</option>
+        <option value="sugestao">Sugestão</option>
+        <option value="ideia">Ideia</option>
+        <option value="critica">Crítica construtiva</option>
+      </select>
+
+      <label for="mensagem">Escreva sua mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Escreva aqui sua ideia, sugestão ou crítica..."></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
